@@ -1,0 +1,50 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'formulario/css/style.css' %}">
+    <script src="{% static 'formulario/js/script.js'%}"></script>    
+    <link rel="shortcut icon" type="imagex/png" href="images/icone.ico">
+    <title>Formulário</title>
+</head>
+<body>
+   <div>
+    <form class="formulario" OnSubmit="gravarDados();">
+        <form class="formulario" OnSubmit="addItem();">
+        <form class="formulario" method="post">
+            <a class="link" href="{% static 'formulario/ver_formulario2.html'%}">Clique aqui para ver os Dados Cadastrados</a>
+            <h1 class="container border py-3 my-3">Formulário Digital</h1>
+            <p> Preencha os seus dados abaixo:</p>
+            <div class="field">
+                <label for="nome">Nome Completo: </label>
+                <input type="text" id="livronome" name="livronome" placeholder="Digite seu nome completo" required>
+            </div>
+            <div class="field">
+                <label for="edit">Idade: </label>
+                <input type="text" id="livroedit" name="livroedit" placeholder="Digite a idade">
+            </div>
+            <div class="field">
+                <label for="issn">CPF:</label>
+                <input type="number" id="livroissn" name="livroissn" placeholder="Digite o CPF" required>
+            </div>    
+            <div class="field">
+                <label for="autor">Endereço: </label>
+                <input type="text" id="livroautor" name="livroautor" placeholder="Digite o seu endereço">
+            </div>
+            <div class="field">
+                <label for="data">RG: </label>
+                <input type="text" id="livroano" name="livroano" placeholder="Digite seu RG">
+            </div>  
+    
+            <input class="botao" type="submit" name="acao" value="Enviar">
+        </form>
+
+</div>
+
+</body>
+</html>
+
